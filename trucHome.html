@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <style>
+		.item{
+		    vertical-align: top;
+		    display: inline-block;
+		    text-align: center;
+		    width: 120px;
+		}
+
+		.caption {
+				display: block;
+				color: white;
+				margin-bottom: 40px;
+		}
+
+		.logo {
+				margin-right: 10px;
+		}
+		</style>
+    </head>
+
+	<center>
+		<body style="background-color: black">
+			<!--Truc's Avatar with music buttons-->
+			<p style="line-height: 100px">
+			<button onclick="playAudio()" type="button"> Play Music </button>
+			<img src="truc.png" alt="Truc" width="150" height="150" style="border-radius:50%">
+			<button onclick="pauseAudio()" type="button"> Pause Music </button>
+			</p>
+
+			<!--Truc's Name with Logo-->
+			<p style="line-height: 200px"><img src="trucName.png" alt="Name" width="800"></p>
+
+			<!--Logo links with labels-->
+			<p>
+			<a href=https://github.com/truc-tran target="_blank" class="logo"> <!--GitHub-->
+					<figure class="item">
+					<img src="githubLogo.png" alt="GitHub" width="50" height="50" style="border-radius:50%">
+					<figcaption class="caption">GitHub</figcaption>
+					</figure></a>
+
+			<a href=https://www.linkedin.com/in/truc-tran-0828/ target="_blank" class="logo"> <!--LinkedIn-->
+					<figure class="item">
+					<img src="linkedinLogo.png" alt="LinkedIn" width="50" height="50" style="border-radius:50%;">
+					<figcaption class="caption">LinkedIn</figcaption>
+					</figure></a>
+
+			<a href=resume.pdf  target="_blank" class="logo"> <!--Resume-->
+					<figure class="item">
+					<img src="resumeLogo.png" alt="Resume" width="50" height="50" style="border-radius:50%;">
+					<figcaption class="caption">Resume</figcaption>
+					</figure></a>
+
+			<a href=Information.html target="_blank" class="logo"> <!--Resume-->
+					<figure class="item">
+					<img src="informationLogo.png" alt="Information" width="50" height="50" style="border-radius:50%;">
+					<figcaption class="caption">Information</figcaption>
+					</figure></a>
+
+
+
+
+			<!--Music Audio-->
+			<audio id="myAudio"> <source src="Happy and Joyful Children - Positive and Upbeat Instrumental Background Music.mp3" type="audio/ogg"> </audio>
+			<script>
+			var x = document.getElementById("myAudio");
+			function playAudio() {x.play();}
+			function pauseAudio() {x.pause();}
+			</script>
+
+		</body>
+	</center>
+</html>
